@@ -14,6 +14,6 @@ app.get('/api', (req, res) => {
   res.json({ message: 'Hello from the API endpoint!' });
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Server is running on http://0.0.0.0:${port}`);
 });
